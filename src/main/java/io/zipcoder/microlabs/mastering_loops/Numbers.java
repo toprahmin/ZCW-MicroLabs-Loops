@@ -31,18 +31,26 @@ public class Numbers {
         return squares;
     }
 
-
-
     public String random4(){
         return "";
     }
 
     public String even(int n){
-        return "";
+        String evenNumbers = "even()\n*** Output ***";
+        for(int i = 1; i < n; i++) {
+            if (i % 2 == 0) {
+                evenNumbers = evenNumbers + "\n" + i;
+            }
+        }
+        return evenNumbers;
     }
 
     public String powers(int n){
-        return "";
+        String powerUps = "powers()\n*** Output ***";
+        for (int i = 1; i <= n; i++){
+            powerUps = powerUps + "\n" + (int) Math.pow(2,i);
+        }
+        return powerUps;
     }
 
 }
