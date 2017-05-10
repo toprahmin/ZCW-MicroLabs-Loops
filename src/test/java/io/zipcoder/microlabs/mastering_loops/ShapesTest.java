@@ -18,9 +18,9 @@ public class ShapesTest {
     public void triangleTest(){
         //: Given
 
-        String expected = "***";
+        String expected = "triangle()\n*** Output ***\n*\n**\n***\n****\n*****";
         //: When
-        String actual = shapes.triangle(3);
+        String actual = shapes.triangle(5);
         //: Then
         Assert.assertEquals("The functions are equal", expected,actual);
     }
@@ -28,9 +28,9 @@ public class ShapesTest {
     @Test
     public void tableSquareTest(){
         //: Given
-
+        String expected = "| 1 | 2 | 3 | 4 |\n| 2 | 4 | 6 | 8 |\n| 3 | 6 | 9 | 12 |\n| 4 | 8 | 12 | 16 |";
         //: When
-
+        String actual = shapes.tableSquare();
         //: Then
     }
 }

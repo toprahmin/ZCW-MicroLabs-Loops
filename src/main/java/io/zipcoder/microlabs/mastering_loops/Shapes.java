@@ -4,28 +4,18 @@ package io.zipcoder.microlabs.mastering_loops;
 public class Shapes {
 
     public String triangle(int n) {
-        String output = "triangle()\n*** Output ***";
+
+        String sysout = "triangle()\n*** Output ***";
         String stars = "";
-        for (int i = 0; i < n; i++) {
-            stars += "*";
-        }return stars;
+        for (int i = 1; i <= n; i++) {
+            stars += "\n";
+            for (int j = 0; j < i; j++) {
+                stars += "*";
+            }
 
-    }
-
-    public void runIt(int rows){
-        int counter = 0;
-        while (counter != rows){
-            System.out.println(triangle(counter));
-            System.out.print("\n");
-            counter++;
         }
+        return sysout + stars;
     }
-
-    public static void main(String[] args) {
-        Shapes shapes = new Shapes();
-        shapes.runIt(5);
-    }
-
 
     public String tableSquare(){
         return "";
@@ -34,4 +24,15 @@ public class Shapes {
     public String tableSquares(int n){
         return "";
     }
+    public static void main(String[] args) {
+        Shapes shapes = new Shapes();
+        System.out.println(shapes.triangle(5));
+    }
+
 }
+
+
+
+
+
+
